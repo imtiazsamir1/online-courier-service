@@ -1,15 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-const Layout = () => {
+const ShopLayout = () => {
     return (
         <div>
-           admin 
-           <div>
+            ShopLayout
+            ShopLayout
             <Outlet/>
-           </div>
         </div>
     );
 };
 
-export default Layout;
+export default ShopLayout;

@@ -1,35 +1,71 @@
-import React from 'react';
+//import React, { useContext } from 'react';
+//import { AuthContext } from '../../../provider/AuthProvider';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const Login = () => {
+
+
+const signIn=AuthContext;
+
+
+
+  const handleLogin = event =>{
+    event.preventDefault();
+    const form = event.target;
+    const email=form.email.value;
+    const password =form.password.value;
+    console.log(email,password);
+   signIn(email,password)
+    .then(result=>{
+      const user = result.user;
+      console.log(user);
+    })
+  }
     return (
-        <div className='flex justify-center items-center h-screen'>
-           <div className="card bg-base-100 w-96 shadow-sm">
-            <h1 className='flex justify-center items-center '>Login please!!!</h1>
-          <div>
-          <label className="input ">
-  <svg className="h-[1em] opacity-50"  viewBox="0 0 24 24"></svg>
-  <input type="text" className="grow" placeholder="Name" />
- 
-</label>
-<label className="input">
-  <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" fill="none" stroke="currentColor"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></g></svg>
-  <input type="text" className="grow" placeholder="index.php" />
-</label>
-<label className="input">
-  Path
-  <input type="text" className="grow" placeholder="src/app/" />
-  <span className="badge badge-neutral badge-xs">Optional</span>
-</label>
-  <div className="card-body">
-          </div>
-    
-    
-    <div className="card-actions flex justify-center items-center">
-      <button className="btn btn-soft">Log-in</button>
-    </div>
-  </div>
-</div>
+      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold">Login now!</h1>
+          <p className="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
         </div>
+        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form onSubmit={handleLogin} className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input type="email"
+               name="email" 
+              placeholder="email"
+             
+              className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input type="password"
+               name="password"
+              placeholder="password" 
+              
+              className="input input-bordered" required />
+              <label className="label">
+                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+              </label>
+            </div>
+            <div className="form-control mt-6">
+            
+              <input className=" btn btn-primary" type="submit" value="Login"/>
+            </div>
+          </form>
+         <p><small>New Here?<Link to="/auth/register">Create an  account</Link ></small></p>
+        </div>
+      </div>
+    </div>
     );
 };
 
