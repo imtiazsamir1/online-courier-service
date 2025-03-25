@@ -21,6 +21,10 @@ import Return from './pages/user-view/Return';
 import Contact from './pages/user-view/Contact';
 import Admin from './pages/user-view/Admin';
 import ManageOrder from './components/admin-view/ManageOrder';
+import AcceptList from './components/admin-view/AcceptList';
+import ReturnList from './components/admin-view/ReturnList';
+import AdDashboard from './components/admin-view/AdDashboard';
+import AdNotice from './components/admin-view/AdNotice';
 
 const App = () => {
 
@@ -66,8 +70,12 @@ const App = () => {
 <Route path='/dashboard' element={<Dashboard/>}/> 
 <Route path='/return' element={<Return/>}/> 
 <Route path='/contact' element={<Contact/>}/> 
-<Route path='/adminView' element={<Admin/>}/> 
+<Route path='/adminView' element={<AdLayout/>}/> 
 <Route path='/manageOrder' element={<ManageOrder/>}/> 
+<Route path='/acceptList' element={<AcceptList/>}/> 
+<Route path='/returnList' element={<ReturnList/>}/> 
+<Route path='/adDashboard' element={<AdDashboard/>}/> 
+<Route path='/noticeAdmin' element={<AdNotice/>}/> 
  
 <Route path='*' element={<NotFound/>}/>
 <Route path='/unauth-page' element={<Unauth/>}/>

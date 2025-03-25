@@ -55,7 +55,7 @@ const Register = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <input className="btn btn-primary" type="submit" value="register" />
+             <Link to='/dashboard'> <input className="btn btn-primary" type="submit" value="register" /></Link>
               
             </div>
           </form>

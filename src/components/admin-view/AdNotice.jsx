@@ -1,0 +1,19 @@
+import React from 'react';
+import Admin from '../../pages/user-view/Admin';
+
+const AdNotice = () => {
+    return (
+        <div>
+           <h1 className='p-14 text-center text-5xl'>Welcome To Admin Notice...</h1>
+           <div><Admin/></div>
+           <div><div className="flex gap-4 p-8">
+  <div className="card w-1/3 bg-primary text-white p-4 shadow-lg"><h1 className=' text-2xl'>Notice-1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quidem harum asperiores laboriosam voluptate, labore velit impedit, eos earum temporibus dolorem soluta. Vero, doloribus! Officia libero recusandae, tenetur dolor iusto possimus, eaque voluptatum quibusdam temporibus nobis soluta quisquam cupiditate animi enim nesciunt, quos cum nihil atque? Fugiat architecto, asperiores minima animi qui facilis, nulla tempore sed ratione quasi explicabo at ipsum aliquam dolor praesentium esse reiciendis atque porro incidunt veritatis blanditiis modi voluptatem laboriosam? Aliquam tempora sit provident debitis culpa, nulla minus ad, placeat, recusandae accusantium itaque ab facilis qui consequuntur asperiores excepturi perferendis est necessitatibus ipsam. Optio dolores molestiae ipsa, assumenda quibusdam voluptate reiciendis perspiciatis! Dolore dicta quia id fugit vero sed autem perferendis similique beatae eveniet, nobis impedit odio alias inventore ipsam sint eos nam. Nam repudiandae amet non esse alias expedita voluptas, aperiam fugit provident culpa voluptates facere dignissimos ratione. Qui, necessitatibus sed omnis dignissimos dicta voluptates.</p></div>
+  <div className="card w-1/3 bg-secondary text-white p-4 shadow-lg"><h1 className=' text-2xl'>Notice-2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum rem ducimus architecto distinctio quidem culpa saepe omnis deleniti modi aliquid et nobis itaque delectus ipsam sed est, ea sequi hic dignissimos debitis aut animi? Explicabo ipsum natus sunt animi reiciendis commodi aut molestias mollitia aliquam aspernatur sequi id, eaque dolor neque. Architecto reprehenderit quas autem nisi nemo obcaecati, modi similique! Omnis cumque sequi quis illum dignissimos molestiae, vero, suscipit ratione ipsa nesciunt odit at iure harum saepe possimus corrupti eveniet? Consequuntur eaque quidem repellat corporis deserunt, culpa laudantium ut excepturi optio temporibus fugiat iste neque reiciendis voluptatibus, nulla quia?</p></div>
+  <div className="card w-1/3 bg-accent text-white p-4 shadow-lg"><h1 className=' text-2xl'>Notice-3</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, qui nisi ducimus fuga necessitatibus molestias, vitae sint delectus nobis expedita consectetur repellat veritatis, quo consequatur voluptate placeat sunt? Debitis omnis, non placeat tempore iste provident molestias consequatur ex quidem, soluta nulla perspiciatis sint? Similique quia quod possimus facere tenetur recusandae. Reprehenderit quasi sint laborum qui suscipit ullam! Repudiandae ad labore, vitae dignissimos incidunt consectetur dolorum. Obcaecati alias similique accusamus molestiae, pariatur repudiandae earum nobis non? Ullam nisi tempora veniam quod fugit asperiores ipsum accusamus? Quae culpa a qui alias consequuntur optio excepturi accusantium quos sequi. Beatae eligendi voluptatum doloribus aliquid fugit corrupti corporis molestiae officia, illo iste et tenetur cupiditate asperiores esse ipsa quas, totam quaerat? Neque necessitatibus fugiat eum, vel officia assumenda excepturi animi quisquam dolorem, exercitationem eos quae!</p></div>
+</div>
+</div>
+        </div>
+    );
+};
+
+export default AdNotice;

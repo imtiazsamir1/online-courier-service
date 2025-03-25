@@ -5,28 +5,29 @@ import { Link, Outlet } from 'react-router-dom';
 const Admin = () => {
     return (
         <div>
-            <AdLayout/>
-            <div><h1>hello</h1>
-                <div className="drawer lg:drawer-open">
-  <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content flex flex-col items-center justify-center">
+      
+      <div className="drawer">
+  <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
     {/* Page content here */}
-    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">
-      Get Started
-    </label>
+    <label htmlFor="my-drawer" className="btn btn-primary drawer-button">Open drawer</label>
   </div>
   <div className="drawer-side">
-    <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
+    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
     <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
       {/* Sidebar content here */}
-      <li><Link to="/manageOrder">Manage order</Link></li>
-      <li><a>Admin Report</a></li>
-      <li><a>Dashboard</a></li>
-      <li><a>Return List</a></li>
+      <li className='text-red-500'><Link to='/manageOrder'>Manage Order</Link></li>
+      <li className='text-red-500'><Link to='/acceptList'>Accept List</Link></li>
+      <li className='text-red-500'><Link to='/returnList'><a>Return List</a></Link></li>
+      <li className='text-red-500'><Link to='/adDashboard'><a>Dashboard</a></Link></li>
+      <li className='text-red-500'><Link to='/noticeAdmin'><a>Notice</a></Link></li>
+      <li className='text-red-500'><Link to='/'><a>Home</a></Link></li>
+     
     </ul>
   </div>
-</div></div>
-<div><Outlet/></div>
+</div>
+  
+  <div><Outlet/></div>
         </div>
     );
 };

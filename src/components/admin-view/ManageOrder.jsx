@@ -5,6 +5,8 @@ import AdLayout from './AdLayout';
 const ManageOrder = () => {
     return (
         <div>
+           <h1 className='p-14 text-center text-5xl'>Admin Manage Order</h1>
+          <div><Admin/></div>
            <div className="overflow-x-auto">
   <table className="table table-zebra">
     {/* head */}
@@ -12,8 +14,9 @@ const ManageOrder = () => {
       <tr>
         <th></th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Email</th>
+        <th>Accept</th>
+        <th>Return</th>
       </tr>
     </thead>
     <tbody>
@@ -21,26 +24,32 @@ const ManageOrder = () => {
       <tr>
         <th>1</th>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Qualityontrolpecialist@gmail.com</td>
+        <td><button className="btn">Confirm</button></td>
+        <td>
+        <button className="btn btn-neutral">Confirm</button></td>
       </tr>
       {/* row 2 */}
       <tr>
         <th>2</th>
         <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
+        <td>Desktopupportechnician@gmail.com</td>
+        <td><button className="btn">Confirmn</button></td>
+        <td>
+        <button className="btn btn-neutral">Confirm</button></td>
       </tr>
       {/* row 3 */}
       <tr>
         <th>3</th>
         <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
+        <td>Taxccountant@gmail.com</td>
+        <td><button className="btn">Confirm</button></td>
+        <td>
+        <button className="btn btn-neutral">Confirm</button></td>
       </tr>
     </tbody>
   </table>
-</div> <div><AdLayout/></div>
+</div> 
         </div>
     );
 };

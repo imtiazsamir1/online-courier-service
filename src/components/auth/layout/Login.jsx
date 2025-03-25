@@ -59,7 +59,7 @@ const signIn=AuthContext;
             </div>
             <div className="form-control mt-6">
             
-              <input className=" btn btn-primary" type="submit" value="Login"/>
+            <Link to='/dashboard'>  <input className=" btn btn-primary" type="submit" value="Login"/></Link>
             </div>
           </form>
          <p><small>New Here?<Link to="/auth/register">Create an  account</Link ></small></p>
